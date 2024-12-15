@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Fitally.Models.Notification>
+
+@foreach(var m in Model)
+{
+    <div class="alert alert-primary" role="alert">
+        <h4 class="alert-heading">@m.Topic</h4>
+        <p>@m.Info</p>
+        <hr>
+        <p class="mb-0">@m.Date</p>
+    </div>
+}
